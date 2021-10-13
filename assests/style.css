@@ -1,37 +1,930 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+
 
 *{
     
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
-@media (max-width:320px){
-    html{
-        background-color: rgb(28,28,28);
-        color: rgb(255, 255, 255);
+nav{
+    background-color: rgb(32, 32, 32);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.enlace{
+    position: absolute;
+    padding: 10px 20px;
+}
+
+.logo{
+    height: 30px;
+}
+
+nav ul {
+    float: right;
+    margin: 0px 0px;
+}
+
+nav ul li {
+    display: block;
+    line-height: 80px;
+    margin: 50px 0px;
+    line-height: 30px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+ li a:hover{
+    background: rgb(195,40,101);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+#check{
+    display: none;
+}
+
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(32, 32, 32);
+    top: 50px;
+    text-align: center;
+    right: -100%;
+    transition: all 0.5s;
+}
+
+#check:checked ~ul{
+    right: 0;
+}
+
+
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html{
         
-    }
+    color: rgb(255, 255, 255);
+        
+}
+
+
+html{
+    height: 100%;
+    background-image: url(/Portafolio/assests/black-paper-texture-5.jpg);
+    background-size: cover;
+}
+
+body{
+    
+    margin: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    
 }
 
 header{
     position: fixed;
+    height: 38px;
+    padding: 5px 10px;
+    width: 100%;
+    background-image: url(./black-paper-texture-5.jpg);
+    background-size: 100% 50%;
+    
+}
+
+header img{
+    height: 1.8em
+}
+
+.presentacion{
+    padding-top: 40px;
+    padding-left: 25px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.presentacion span{
+    color: rgb(195,40,101);
+    font-size: 35px;
+}
+
+.especializacion{
+
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    
+}
+.especializacion span{
+    color: rgb(195,40,101);
+    font-size: 35px;
+}
+
+.especializacion h1{
+    margin-bottom: 50px;
+}
+
+.especializacion .icono{
+    /* background-color: grey; */
+    
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
     margin-top: 20px;
 }
 
-footer{
+#web-icon {
+    background-image: url(./coding.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#mobile-icon {
+    background-image: url(./development.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#analisis-icon {
+    background-image: url(./analytics.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.especializacion h2{
+
+    font-size: 1em;
     
-    left: 0;
-    bottom: 0;
-    background-color: rgb(255, 255, 255);
-    height: 30px;
+
+}
+
+.especializacion p{
+    color: gray;
+    line-height: 1.6;
+}
+
+.resume{
+    background-image: url(./Fondos/Proyecto_3.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    margin-bottom: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    
+}
+
+
+.resume .container{
+
+    background-color: rgba(167, 167, 167, 0.424);
+    width: 100%;
+    padding: 10px 25px;
+    margin: 80px 0px;
+
+}
+
+.resume h2{
+    font-size: 2em;
+    font-weight: 500;
+    
+}
+
+.resume h3{
+    font-size: 1em;
+    font-weight: 500;
+    
+}
+
+.resume span{
+    font-size: 0.8em;
+    line-height: 1.6;
+    font-style: oblique;
+}
+
+.resume p{
+
+    font-size: 0.8em;
+    line-height: 1.6;
+    border-bottom-width: 4px;
+    
+
+}
+
+.resume .separador {
+    height: 1px;
+    background-color: white;
+}
+
+.experiencia div img{
+    width: 100%;
+    filter: grayscale(1);
+    
+}
+
+.about {
+    padding-bottom: 40px;
+    
+}
+
+#years {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 1px;
+    margin: 10px 40px;
+    border-color: white;
+    border-style: solid;
+    
+}
+
+#years span{
+    
+    font-size: 270px;
+    font-family: 'Montserrat', sans-serif;
+    height: 300px;
+        
+}
+
+#tiempo {
+
     width: 100%;
     display: flex;
-    position: absolute; 
+    margin: 20px 50px;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: right;
+}
+
+
+.skills{
+
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    
+}
+.skills h2{
+    font-size: 2em;
+    font-weight: 700;
+    
+}
+.skills h2 span{
+
+    color: rgb(195,40,101);
+
+}
+
+.skills p{
+
+    font-size: 0.8em;
+    line-height: 1.6;
+    margin-top: 0px;
+    color: grey;
+    
+
+}
+
+.skill-description {
+    width: 100%;
+    
+}
+
+.skill-description p{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    margin: 0px 3px;
+}
+
+#bar1 {
+    background-color: black;
+    padding: 3px;
+    
+  }
+  
+#bar1>div {
+    background-color: rgb(195,40,101);
+    width: 25%;
+    height: 25px;
+    
+  }
+
+#bar2 {
+    background-color: black;
+    padding: 3px;
+    
+  }
+  
+#bar2>div {
+    background-color: rgb(195,40,101);
+    width: 40%;
+    height: 25px;
+    
+  }
+
+#bar3 {
+    background-color: black;
+    padding: 3px;
+    
+  }
+  
+#bar3>div {
+    background-color: rgb(195,40,101);
+    width: 20%;
+    height: 25px;
+    
+  }
+
+
+.proyects{
+
+    height: 100vh;
+    background-image: url(./Fondos/Proyecto_2.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.proyects .container{
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    list-style-type: square;
+    background-color: rgba(255, 255, 255, 0.212);
+    
+    
+    
+}
+
+.proyects h2{
+
+    margin-bottom: 0;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.proyects ol{
+    list-style-type: square;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.proyects span{
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+}
+
+.proyects a{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+}
+.proyects a:link {
+    color: white;
+}
+
+.proyects a:visited {
+    color: white;
+}
+
+.proyects a:hover {
+    color: rgb(195,40,101);
+        
+}
+
+.proyects a:active {
+    color: white;
+}
+
+.contacto{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* margin: 35px ; */
+    padding: 45px 35px;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    /* background-image: url(./Fondos/bog.jpg); */
+
+}
+
+.contacto h2 span{
+color: rgb(195,40,101);
+}
+
+.contacto input {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0px;
+    background-color: rgba(47,47,47);
+    border-style: none;
+    font-family: 'Montserrat';
+    color: grey;
+    padding-left: 8px;
+}
+
+.contacto textarea{
+    width: 100%;
+    margin: 15px 0px;
+    background-color: rgba(47,47,47);
+    border-style: none;
+    font-family: 'Montserrat';
+    color: grey;
+}
+
+.contacto #submit{
+    color: white;
+    background-color: rgb(195,40,101);
+}
+
+
+
+footer{
+    
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    height: 35px;
+    padding-right: 10px;
+    background-image: url(./black-paper-texture-5.jpg);
+    background-size: 100% 50%;
+    align-items: center;
 }
 
 footer a img{
 
-    height: 2em
+    height: 1.5em;
+    
 }
 
+@media (min-width:768px){
+    
+    header{
+        position: fixed;
+        height: 90px;
+        padding: 5px 10px;
+        width: 100%;
+        background-image: url(./black-paper-texture-5.jpg);
+        background-size: 100% 50%;
+        
+    }
+
+    header img{
+        height: 70px;
+        padding: 5px;
+        
+        
+    }
+
+    .presentacion{
+        
+        font-size: 40px;
+        font-weight: 900;
+        
+        
+    }
+    
+    .presentacion span{
+        
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    .especializacion{
+        height: 100vh;
+        justify-content: center;
+
+    }
+
+    .especializacion .items{
+        display: flex;
+    }
+
+    .items > div{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+
+    .especializacion span{
+        
+        font-size: 50px;
+    }
+    
+    .especializacion h1{
+
+        margin-left: 20px ;
+        font-size: 40px;
+        margin-bottom: 50px;
+        font-weight: 600;
+
+    }
+    .especializacion h2{
+
+        font-size: 1.3em;
+
+    }
+
+    .especializacion .icono{
+        /* background-color: grey; */
+        
+        width: 100%;
+        height: 80px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+
+    .especializacion p{
+        font-size:13px ;
+        line-height: 1.8;
+        
+    }
+    .resume{
+        height: 100vh;
+        
+    }
+
+    .resume .sobre-fondo{
+
+        
+        height: 100%;
+        margin: 30px;
+        padding: 0px;
+        display: flex;
+        
+        
+
+    }
+
+    .resume .container{
+        
+        height: auto;
+        width: 50%;
+        margin: 30px 15px;
+        display: flex;
+        align-self: center;
+        z-index: 0;
+        
+    }
+    .resume .experiencia{
+        height: 300px;
+        
+    }
+
+    .about{
+        height: 100vh;
+        margin-top: 90px;
+        
+        display: flex;
+        
+    }
+    #years {
+
+        width: 300px;
+        height: 450px;
+        display: flex;
+        align-self: center;
+        
+    }
+
+    .skills{
+        height: 450px;
+        display: flex;
+        align-self: center;
+        margin-right: 30px;
+    }
+
+    .skills h2{
+        font-size: 40px;
+    }
+
+    #bar1 {
+        
+        margin: 5px 0px 10px;
+        
+      }
+    #bar2 {
+        
+        margin: 5px 0px 10px;
+        
+    }
+
+    #bar3 {
+        
+        margin: 5px 0px 10px;
+        
+    }
+
+    #tiempo{
+        font-size: 15px;
+    }
+
+
+    .proyects h2{
+
+        
+        font-size: 4em;
+        font-weight: 900;
+    }
+
+    .proyects span{
+        
+        font-size: 1.5em;
+    }
+
+    .proyects ol{
+        list-style-type: none;
+            
+        
+    }
+
+    .contacto{
+        
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+
+    .contacto div{
+        margin: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contacto form{
+        margin: 0px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 45%;
+    }
+
+
+    .contacto h2{
+        font-size: 3em;
+        font-weight: 700;
+    }
+
+    .contacto p{
+        height: 80px;
+        font-size: 1.5em;
+    }
+
+    .contacto input {
+        
+        height: 50px;
+        margin: 5px 0px;
+        background-color: rgba(47,47,47);
+        border-style: none;
+        font-family: 'Montserrat';
+        color: grey;
+        padding-left: 8px;
+    }
+
+    .contacto textarea{
+        
+        height: 150px;
+        margin: 15px 0px;
+        padding-left: 8px;
+        text-align: left;
+    }
+
+
+    footer{
+    
+        
+        height: 50px;
+        
+    }
+    
+    footer a img{
+    
+        height: 1.5em;
+        
+    }
+
+    footer a img{
+
+        height: 2.3em;
+        
+    }
+
+    
+}
+
+@media (min-width:1024px){
+
+    .presentacion{
+        
+        margin-left: 50px;
+        font-size: 60px;
+        font-weight: 900;
+        
+        
+    }
+    
+    .presentacion span{
+        
+        font-size: 90px;
+        font-weight: 700;
+    }
+
+    .especializacion span{
+        
+        font-size: 80px;
+    }
+    
+    .especializacion h1{
+
+        margin-left: 400px ;
+        font-size: 70px;
+        margin-bottom: 100px;
+        font-weight: 600;
+
+    }
+
+    .especializacion h2{
+
+        font-size: 1.8em;
+
+    }
+
+    .items{
+        display: flex;
+        align-self: center;
+    }
+
+    .items > div{
+        
+        
+        width: 450px;
+    }
+
+    .especializacion p{
+        font-size:18px ;
+        line-height: 1.8;
+        
+    }
+
+    .resume{
+        display: flex;
+        justify-content: center;
+    }
+    .resume .container{
+        
+        
+        width: 600px;
+        margin: 30px 15px;
+        display: flex;
+        align-self: center;
+        
+        
+    }
+
+    .resume h2{
+        font-size: 3em;
+        font-weight: 700;
+        
+    }
+    
+    .resume h3{
+        font-size: 2em;
+        font-weight: 500;
+        
+    }
+    
+    .resume span{
+        font-size: 1.2em;
+        line-height: 1.6;
+        font-style: oblique;
+    }
+    
+    .resume p{
+    
+        font-size: 1.2em;
+        line-height: 1.6;
+        border-bottom-width: 4px;
+        
+    
+    }
+
+
+    #years {
+
+        width: 300px;
+        height: 600px;
+        display: flex;
+        align-self: center;
+        justify-content: space-around;
+        margin: 0px 100px;
+        
+    }
+
+    #tiempo{
+        font-size: 18px;
+    }
+
+
+    .about{
+
+        width: 1200px;
+        display: flex;
+        align-self: center;
+        
+    }
+    .skills{
+        height: 450px;
+        display: flex;
+        align-self: center;
+        margin: 30px;
+        width: 40%;
+        justify-content: space-around;
+    }
+
+    .skills h2{
+        font-size: 60px;
+    }
+
+    .skills p{
+        font-size: 18px;
+    }
+
+
+    .contacto{
+        
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+
+    .contacto form{
+        width: 30%;
+        margin: 0px 60px;
+    }
+
+    .contacto div{
+        width: 20%;
+    }
+}

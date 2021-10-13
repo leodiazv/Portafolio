@@ -4,22 +4,238 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LDV</title>
+    <title >LDV</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assests/letter-l2.ico"/>
     <link rel="stylesheet" href="./assests/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    
 </head>
 <body>
-    <header>
-        Soy el header
-    </header>
-    <nav></nav>
+    <!-- <header>
+        <img src="./assests/letra-l.png"> 
+    </header> -->
+    
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-hamburger"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="./assests/letra-l.png" class="logo">
+        </a>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a class="active" href="#">Inicio</a></li>
+            <li><a href="#especializacion">Especialización</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+
+    </nav>
+
+
     <section class="presentacion">
-        <h1> Hola, Soy Leomeneo😁</h1>
+        
+            <h1> <span>Hola!</span>,<br> Soy Leomeneo😁</h1>
+        
+        
+    </section>
+    
+    <section class="especializacion" id="especializacion">
+        <h1> <span>Mi</span> especialización</h1>
+        
+        <div class="items">
+            <div>
+                <div class="icono" id="web-icon"></div>
+                <h2>WEB DESIGN</h2>
+                <p>
+                    Trabajo con el cliente y los colaboradores para la entrega de sitios
+                    atractivos y fluidos que atraerán personas e inversión.
+                </p>
+            </div>
+            
+            <div>
+                <div class="icono" id="mobile-icon"></div>
+                <h2>MOBILE CODING</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam iste 
+                    saepe quos quo molestiae pariatur tempora ipsum in possimus itaque!
+                </p>
+            </div>
+            
+            <div>
+                <div class="icono" id="analisis-icon"></div>
+                <h2>ANALISIS DE DATOS</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus 
+                    voluptatibus, dolore libero placeat in perferendis accusantium cumque ipsa modi rerum.
+                </p>
+            </div>
+    </div>
+    </section>
+
+    <section class="resume" id="resume">
+        <div class="sobre-fondo">
+            <div class="container"> 
+                <article rel="educacion" id="educacion">
+                    <h2>Educación</h2>
+                    <div>
+                        <h3>DESARROLLO <br>WEB FULL-STACK</h3>
+                        <span>Academlo, Educación Virtual<br>
+                                En curso
+                        </span>
+                        <p>Programa intensivo de 10 meses con abordaje de HTML, CSS Y Javascript. 
+                            Desarrollo de aplicaciones web con React y programación backend con Python, Node y AQL. Administración de bases de datos.
+                        </p>
+
+                        <div class="separador"></div>
+
+                        <h3>ARQUITECTURA</h3>
+                        <span>Universidad Nacional de Colombia,<br>
+                             Bogotá, Colombia.<br>
+                                En curso
+                        </span>
+                        <p>Programa de pregrado en la escuela de arquitectura y urbanismo con enfasis
+                            en vivienda.
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="container">
+                
+                <article class="experiencia" id="experiencia">
+                    <h2>Experiencia</h2>
+                    <div>
+                        <img src="./assests/soon.jpg">
+                    </div>
+                    
+
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div id="years">
+            <span>1</span>
+            <div id="tiempo">
+                <div>___________</div>
+                MES<br>
+                de<br>
+                EXPERIENCIA<br>
+
+            </div>
+        </div>
+
+        <article class="skills">
+
+            <h2><span>Development</span> Skills </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, minus.</p>
+            <div class="skill-description">
+                <p>Diseño Movil <span>25%</span></p>
+                <div id="bar1">
+                    <div></div>
+                </div>
+                <p>Coding <span>30%</span></p>
+                <div id="bar2">
+                    <div></div>
+                </div>
+                <p>Ilustration <span>20%</span></p>
+                <div id="bar3">
+                    <div></div>
+                </div>
+            </div>
+
+
+        </article>
+
+
+    </section>
+
+    <section class="proyects" id="proyectos">
+
+        <div class="container">
+           <ol>
+                <li>
+                    <a href="#">
+                        <h2>Proyecto 1</h2>
+                        <span>Ilustracion</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <h2>Proyecto 2</h2>
+                        <span>Branding</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <h2>Proyecto 3</h2>
+                        <span>Mobile Desing</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <h2>Proyecto 4</h2>
+                        <span>House Desing</span>
+                    </a>
+                </li>
+                
+           </ol>
+           
+           
+        </div>
+
+        <section class="contacto" id="contacto">
+            
+            <div>
+                <h2><span>Bogotá</span>,<br>Colombia</h2>
+                <p><a href="mailto:leodiazv@gmail.com">leodiazv@gmail.com</a><br>
+                    +57 319-218-8473</p>
+            </div>
+            <form >
+
+                <input type="text" id="fname" name="fname" value="Name" ><br>
+                <input type="email" id="femail" name="femail" value="Email"><br>
+                <input type="text" id="fsubject" name="fsubject" value="Subject"><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="30" value="hola">Mensaje</textarea>
+                <input type="submit" id="submit"value="Contactame">
+
+            </form>
+        </section>
+
+
     </section>
 
 
+
+
+
+
     <footer>
-        <a rel="linkedin"><img src="./assests/icons8-linkedin-100.svg"></a>
+        <a href="#" rel="linkedin"><img src="./assests/icons8-linkedin-100.svg"></a>
+        <a href="#" rel="facebook"><img src="./assests/icons8-facebook-100.svg"></a>
+        <a href="#" rel="instagram"><img src="./assests/icons8-instagram-100.svg"></a>
+        <a href="#" rel="github"><img src="./assests/icons8-github-2-100.svg"></a>
         
     </footer>
+
+
+    <script>
+        const checkbox = document.getElementById("check")
+        const navMenu = document.getElementById("nav-menu")
+
+        navMenu.addEventListener("click",function (){
+            checkbox.checked = false
+        })
+
+
+    </script>
+
+
+
 </body>
 </html>
